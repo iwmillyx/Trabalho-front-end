@@ -1,0 +1,259 @@
+body{
+    background-color:rgba(34, 34, 34, 1);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+b
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.login{
+    width: 200px;
+    height: 20px;
+    top: 7.5px;
+    padding: 13px, 15px, 13px, 15px;
+    border-radius: 8px;
+    gap: 4px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: white;
+}
+
+button{
+    width: 100%;
+    height: 49px;
+    padding: 15px 20px, 15px, 20px;
+    border-radius: 8px;
+    gap: 10px;
+    background: rgba(16, 95, 116, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+button .fonte{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    letter-spacing: 0px;
+    text-align: center;
+    background: transparent;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.textinho{
+    color:rgba(16, 95, 116, 1);
+    margin: 0 auto;
+    display: block;
+}
+.texto{
+    color:rgba(16, 95, 116, 1);
+    margin: 0 auto;
+    display: block;
+}
+
+.tela-login{
+    background-color:rgba(242, 242, 242, 1);
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    /*padding: 50px;*/
+    border-radius: 20px;
+    color:rgba(34, 34, 34, 1);
+    margin-right: 20px;
+    width: 490px;
+    height: 470px;
+    gap: 50px;
+    text-align: center;
+    margin-top: -10px;
+    max-width: 400px; /* Define uma largura máxima */
+    margin-bottom: 20px; /* Adiciona espaço inferior entre as telas */
+}
+
+.texto-canto-direito {
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 24px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: right;
+    background: transparent;
+    color: white;
+}
+
+.termos-texto{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-top: 20px; /* Adiciona espaço acima do texto dos termos */
+}
+
+.termos-link{
+    color: rgba(16, 95, 116, 1); /* Cor do texto sublinhado */
+    text-decoration: underline; /* Adiciona sublinhado */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.tela-login h2 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center; /* Alinha o texto do h2 no centro */
+    color: rgba(34, 34, 34, 1);
+}
+
+img{
+    /*width: 293px;
+    height: 304px;
+    top: 50%;*/
+    margin-left: -500px;
+    width: 293px;
+    max-width: 293px;
+    height: auto;
+}
+
+fieldset{
+    border: 1px solid rgba(34, 34, 34, 1); /* Cor da borda do fieldset */
+    border-radius: 6px; /* Borda arredondada */
+    padding: 5px;
+    margin-bottom: 15px; /* Espaçamento inferior do fieldset */
+    width: 380px;
+}
+
+legend{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    width: Fixed (41px);
+    height: Hug (15px);
+    background:rgba(244, 244, 244, 1);
+    left: 14.5px;
+    padding: 0px, 4px, 0px, 4px;
+}
+
+input[type="text"]{
+    width: 100%;
+    height: 30px;
+    top: 8px;
+    padding: 13px, 15px, 13px, 15px;
+    border-radius: 4px;
+    border: 1px;
+    gap: 8px;
+    background:rgba(242, 242, 242, 1) ;
+}
+
+input[type="text"]::placeholder{
+    background: rgba(242, 242, 242, 1);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 370px;
+    height: 24px;
+}
+
+input[type="password"]{
+    width: 100%;
+    height: 30px;
+    top: 8px;
+    padding: 13px, 15px, 13px, 15px;
+    border-radius: 4px;
+    border: 1px;
+    gap: 8px;
+    background:rgba(242, 242, 242, 1) ;
+}
+
+input[type="password"]::placeholder{
+    width: Fill (338px);
+    height: Hug (9px);
+    gap: 8px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    background:rgba(242, 242, 242, 1);
+}
+
+label[for="termosC"] {
+    color:rgba(39, 39, 39, 1); /* Cor do texto */
+}
+
+label[for="termosC"] u {
+    color:rgba(16, 95, 116, 1); /* Cor do texto sublinhado */
+}
+
+@media screen and (max-width: 1094px) {
+    .container {
+      flex-direction: column; /* direção do flex para coluna */
+      align-items: center; /* Centraliza os itens verticalmente */
+      padding: 20px; /* espaçamento do container */
+    }
+  
+    img {
+      margin-bottom: 20px; /* espaçamento inferior da imagem */
+      margin-top: -250px;
+      margin-left: 0px;
+    }
+  
+    .tela-login {
+      width: 85%; /* largura  */
+      margin-top: 20px; /* espaço acima do formulário */
+      margin-top: 300px;
+      margin-left: -30px;
+      height: 500px;
+    }
+  
+    .texto-canto-direito {
+      width: 100%; /*largura total */
+      text-align: center; /* Centraliza o texto horizontalmente */
+      margin-top: 20px; /* espaçamento acima do texto */
+    }
+    fieldset {
+        width: 95%; /* largura do fieldset */
+      }
+   
+  }
