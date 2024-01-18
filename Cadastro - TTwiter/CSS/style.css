@@ -1,0 +1,237 @@
+body{
+    background-color:rgba(34, 34, 34, 1);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.cadastro{
+    width: 200px;
+    height: 20px;
+    top: 7.5px;
+    padding: 13px, 15px, 13px, 15px;
+    border-radius: 8px;
+    gap: 4px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: white;
+}
+
+button{
+    width: 100%;
+    height: 49px;
+    padding: 15px 20px, 15px, 20px;
+    border-radius: 8px;
+    gap: 10px;
+    background: rgba(16, 95, 116, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+button .fonte{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    letter-spacing: 0px;
+    text-align: center;
+    background: transparent;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.textinho{
+    color:rgba(16, 95, 116, 1);
+    margin: 0 auto;
+    display: block;
+}
+
+.tela-cadastro{
+    position: absolute;
+    background-color:rgba(242, 242, 242, 1);
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    /*padding: 20px;*/
+    padding: 20px;
+    border-radius: 20px;
+    color:rgba(34, 34, 34, 1);
+    margin-left: -500px;
+    width: 500px;
+    height: 520px;
+    gap: 50px;
+    text-align: center;
+    margin-top: -10px;
+    /*width: 100%;*/ /* Ocupa a largura total */
+    max-width: 400px; /* Define uma largura máxima */
+    margin-bottom: 20px; /* Adiciona espaço inferior entre as telas */
+}
+
+.tela-cadastro h2 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: px;
+    text-align: center; /* Alinha o texto do h2 no centro */
+    color: rgba(34, 34, 34, 1);
+}
+
+img {
+    width: 293px;
+    height: 304px;
+    margin-left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Move para a esquerda metade da largura da própria imagem */
+    max-width: 100%; /* Para garantir que a imagem não ultrapasse a largura máxima do contêiner */
+    height: auto;
+    position: absolute; /* Adicionado para posicionamento absoluto */
+    top: 35%;
+}
+
+
+fieldset{
+    border: 1px solid rgba(34, 34, 34, 1); /* Cor da borda do fieldset */
+    border-radius: 6px; /* Borda arredondada */
+    padding: 5px;
+    margin-bottom: px; /* Espaçamento inferior do fieldset */
+    width: 380px;
+    height: 50px;
+}
+
+legend{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+    width: Fixed (41px);
+    height: Hug (15px);
+    background:rgba(244, 244, 244, 1);
+    left: 14.5px;
+    padding: 0px, 4px, 0px, 4px;
+}
+
+input[type="text"]{
+    width: 100%;
+    height: 30px;
+    top: 8px;
+    padding: 13px, 15px, 13px, 15px;
+    border-radius: 4px;
+    border: 1px;
+    gap: 8px;
+    background:rgba(242, 242, 242, 1) ;
+}
+
+input[type="text"]::placeholder{
+    background: rgba(242, 242, 242, 1);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 370px;
+    height: 24px;
+}
+
+input[type="password"]{
+    width: 100%;
+    height: 30px;
+    top: 8px;
+    padding: 13px, 15px, 13px, 15px;
+    border-radius: 4px;
+    border: 1px;
+    gap: 8px;
+    background:rgba(242, 242, 242, 1) ;
+}
+
+input[type="password"]::placeholder{
+    width: Fill (338px);
+    height: Hug (9px);
+    gap: 8px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    background:rgba(242, 242, 242, 1);
+}
+
+label[for="termosC"] {
+    color:rgba(39, 39, 39, 1); /* Cor do texto */
+
+
+}
+
+label[for="termosC"] u {
+    color:rgba(16, 95, 116, 1); /* Cor do texto sublinhado */
+}
+
+/*telas menores que 600px */
+@media screen and (max-width: 600px) {
+    .tela-cadastro {
+      width: 65%; /*largura*/
+      padding: 70px; /*espaçamento interno  */
+      left: 180%;
+      transform: translateX(-50%);
+      top: 370px;
+    }
+  
+    img {
+      margin-left: 170px;
+      margin-bottom:550px; /* espaço inferior  */
+      margin-bottom: 800px;
+      top: 40px;
+    }
+
+    fieldset {
+        width: 290px; 
+        margin-left: -20px;
+    }
+
+
+  }
+  
+/*regras para telas entre 600px e 768px */
+@media screen and (min-width: 601px) and (max-width: 768px){
+
+    .tela-cadastro {
+      width: 150%;
+  }
+
+.cadastro{
+    width: 100%;
+    height: 20px;
+}
+
+fieldset {
+    width: 50px; 
+}
+  
+legend{
+    width: auto;
+}
+}
